@@ -266,10 +266,10 @@ nav {
     #titulo {font-size: 2rem;
              width: 30%;
              margin-left: 57%;}
+    .grid2 {grid-template-columns: 100%;}
     .grid4  {grid-template-columns: 50% 50%;}
     #lol{width: 100%;
          padding: 4% 4%;}
-    .coltexto{text-align: left;}
 }
 
 @media only screen and (width<= 630px){
@@ -279,4 +279,5 @@ nav {
     .grid4  {grid-template-columns: 100%;}
     .col2 {padding-top:4%;}
     #titulo {margin-left:65%;}
+    .coltexto{text-align: left;}
 }
