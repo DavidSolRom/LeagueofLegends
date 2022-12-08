@@ -1,0 +1,215 @@
+/**********************************************************/
+/* Web de League of Legends                               */
+/* Hoja de estilo para index.html                         */
+/* Autor: David Solera Romero                             */
+/* Versión: 1.0                                           */
+/* 07 de diciembre de 2022                                */
+/**********************************************************/
+
+/* Estilo general                                         */
+
+@font-face {
+    src: url('../fonts/Gladista.ttf');
+    font-family: titulos; /* familia de un tipo de letra */
+           }
+
+@font-face {
+    src: url('../fonts/Ambery\ Garden.ttf');
+    font-family: navegacion;
+}
+
+@font-face {
+    src: url('../fonts/Quicksand-VariableFont_wght.ttf');
+    font-family: textos; /* familia de un tipo de letra */
+           }
+
+* {box-sizing: border-box;} /* preguntar */
+
+body{margin:0;padding:0; /* quitamos por defectos */
+    font-family: textos; /* familia de texto */
+    background-color:#1c0b2e
+}
+
+#wrapper {width:80%;
+          margin:auto;}
+
+h1,h2,h3{
+    font-family: titulos;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom:10px;
+    color:#c3a6f6;
+}
+
+section {padding: 6% 0;}
+
+.vacio {padding-bottom: 5%;}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px; height: 30px; border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color:#c3a6f6;
+    box-sizing: content-box;
+}
+
+.fa:hover {
+    opacity: 0.7;}
+
+html {scroll-behavior: smooth;}
+
+/* Barra de navegación */
+
+nav {
+    position: sticky;
+    top:0;
+    z-index: 999; /* esto marca el nivel de capa en el que debe aparecer un elemento*/
+  }
+
+.navegacion {
+    font-family: navegacion;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #1c0b2e;
+    overflow: hidden;
+    /* opacity:0.5; se usa para disminuir la opacidad de la barra */
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: titulos;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(90, 21, 143);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: 0.6s;
+  }
+
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+    padding:0px; /* añadido para que no engorde la barra con el icono de la hamburguesa */
+}
+
+/* LAS MEDIA QUERIES DE MI BARRA DE NAVEGACIÓN ESTARÁN AQUÍ */
+
+@media screen and (max-width: 750px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+@media screen and (max-width: 750px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+/* HERO */
+
+#home{background-image: url('../../LeagueofLegends/images/estrellaoscura.jpg'); /* imagen fondo */
+    height:100vh; /* para obligar a que se vea más allá del contenido (alto imagen) */
+    background-repeat: no-repeat; /* no la repitas */
+    background-size: cover; /* cubre todo el fondo */
+    background-position: 15%; /* fija lo que hay en el medio o lo que indiquemos */
+
+    padding-left:4%; /* espacio para el texto por la izquierda */
+    padding-top:4%; /* espacio para el texto por arriba */
+ }
+
+#titulo{
+      width: 33%; /* ancho */ 
+      padding: 2%; /* borde interior de un bloque */
+      border-radius: 35%; /* redondear esquinas de un bloque */
+      margin-left:60%;
+      text-align: center; /* alinear el texto al centro */
+      font-family: titulos; /* tipo de letra utilizada */
+      font-size: 2.75rem; /* tamaño triple de lo normal */
+      color:#c3a6f6;
+      }
+
+/* Galeria de fotos */
+
+.grid3{display:grid;
+       grid-template-columns: auto auto auto;}
+
+.tercios img {width: 100%;
+              padding: 4%;}
+
+/* Galeria de videos */
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    }
+    
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+      padding:5%;
+}
+
+.grid2{display:grid;
+    grid-template-columns: auto auto;}
+
+.tercios img {width: 100%;
+           padding: 2%;}
+
+/* FOOTER */
+
+#mifooter {font-size: 2.45rem;}
+
+.redes {margin:auto;
+        text-align: center;}
+
+.copyright {text-align: center;
+            color: #c3a6f6;
+            font-family: textos;
+            font-size: 1.35rem;}
+
+/* MEDIA QUERIES */
+
+@media only screen and (width<= 1050px){
+    #wrapper {width:95%;}
+    .grid3  {grid-template-columns: 50% 50%;}
+    .grid2  {grid-template-columns: 100%;}
+}
+
+@media only screen and (width<= 630px){
+    #wrapper{width:100%}
+    .grid3  {grid-template-columns: 100%;}
+    .grid2  {grid-template-columns: 100%;}
+}

@@ -1,0 +1,281 @@
+/**********************************************************/
+/* Web de League of Legends                               */
+/* Hoja de estilo para index.html                         */
+/* Autor: David Solera Romero                             */
+/* Versión: 1.0                                           */
+/* 01 de diciembre de 2022                                */
+/**********************************************************/
+
+/* Estilo general                                         */
+
+@font-face {
+    src: url('../fonts/Gladista.ttf');
+    font-family: titulos; /* familia de un tipo de letra */
+           }
+
+@font-face {
+    src: url('../fonts/Ambery\ Garden.ttf');
+    font-family: navegacion;
+}
+
+@font-face {
+    src: url('../fonts/Quicksand-VariableFont_wght.ttf');
+    font-family: textos; /* familia de un tipo de letra */
+           }
+
+* {box-sizing: border-box;} /* preguntar */
+
+body{margin:0;padding:0; /* quitamos por defectos */
+    font-family: textos; /* familia de texto */
+    background-color:#1c0b2e
+}
+
+#wrapper {width:80%;
+          margin:auto;}
+
+h1,h2,h3{
+    font-family: titulos;
+}
+
+section {padding: 6% 0;}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px; height: 30px; border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color:#c3a6f6;
+    box-sizing: content-box;
+}
+
+.fa:hover {
+    opacity: 0.7;}
+
+html {scroll-behavior: smooth;}
+
+/*************** BARRA DE NAVEGACIÓN *********************/
+
+nav {
+    position: sticky;
+    top:0;
+    z-index: 999; /* esto marca el nivel de capa en el que debe aparecer un elemento*/
+  }
+
+.navegacion {
+    font-family: navegacion;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #1c0b2e;
+    overflow: hidden;
+    /* opacity:0.5; se usa para disminuir la opacidad de la barra */
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: titulos;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(90, 21, 143);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: 0.6s;
+  }
+
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+    padding:0px; /* añadido para que no engorde la barra con el icono de la hamburguesa */
+}
+
+  /* LAS MEDIA QUERIES DE MI BARRA DE NAVEGACIÓN ESTARÁN AQUÍ */
+
+@media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+/**************** INTRODUCCIÓN ***************************/
+
+.tituloseccion {
+    font-family: titulos;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom:15px;
+    color:#c3a6f6;
+}
+
+.tituloseccion1 {
+    font-family: titulos;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom:10px;
+    color:#c3a6f6;
+}
+
+/*************** HERO SECTION FOTO TEXTO ***************/
+
+#hero{background-image: url('../../LeagueofLegends/images/Imagen1.jpg'); /* imagen fondo */
+       height:100vh; /* para obligar a que se vea más allá del contenido (alto imagen) */
+       background-repeat: no-repeat; /* no la repitas */
+       background-size: cover; /* cubre todo el fondo */
+       background-position: 55%; /* fija lo que hay en el medio o lo que indiquemos */
+
+       padding-left:4%; /* espacio para el texto por la izquierda */
+       padding-top:4%; /* espacio para el texto por arriba */
+    }
+
+#titulo{background-color: rgba(175, 45, 192, 0.19); /* color de fondo y luego transparencia */
+         width: 33%; /* ancho */ 
+         padding: 2%; /* borde interior de un bloque */
+         border-radius: 35%; /* redondear esquinas de un bloque */
+         margin-left:60%;
+         text-align: center; /* alinear el texto al centro */
+         font-family: titulos; /* tipo de letra utilizada */
+         font-size: 2.75rem; /* tamaño triple de lo normal */
+         color:#c3a6f6;
+         }
+
+/********************* GRID ******************/
+
+.grid2 {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.col2 img {width: 100%;}
+
+#fundadores img{border-radius: 15%;}
+
+.coltexto {padding: 4%;
+           padding-top:5%;
+           text-align: justify;
+           color:#c3a6f6;
+           font-size: 1.8rem;
+           font-family: textos;
+        }
+
+.grid4 {
+        display:grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        font-size: 1.4rem;
+}
+        
+.col4{padding:6%;}
+
+/************** ORÍGENES *********************/
+
+#lol{
+  float:right;
+  padding:2%;
+  padding-top: 5%;
+  padding-right: 3%;
+  width:60%;
+}
+
+.boton2 {text-decoration: none;
+  font-weight: bold;
+  color:rgb(255, 255, 255);
+  border-radius: 5px;}
+          
+.boton:hover {background-color: #1c0b2e;
+        color: rgb(228, 136, 244);
+        transition: 1s;}
+
+/*************** CARDS ***********************/
+
+.card {
+    /* Sombras para la card */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    transition: 1s;
+    padding: 8%;
+    background-color: #310052;
+    border-radius: 2%;
+  }
+   
+  /* Padding dentro del contenedor de la card */
+  .container {
+    text-align: center;
+    padding: 4px 16px;
+    margin-top:-7px;
+  }
+
+.card img {width:95%;
+           border-radius:5%;
+} 
+
+/* Seleccionamos el ancho de la imagen de la card */
+
+.boton {text-decoration: none;
+    font-weight: bold;
+    color:rgb(245, 245, 245);
+    background-color: rgb(99, 0, 94);
+    padding: 5px 10px;
+    border-radius: 5px;}
+            
+.boton:hover {background-color: #1c0b2e;
+          color: rgb(228, 136, 244);
+          transition: 1s;}
+
+/*************** FOOTER **********************/
+
+#mifooter {font-size: 2.45rem;}
+
+.redes {margin:auto;
+        text-align: center;}
+
+.copyright {text-align: center;
+            color: #c3a6f6;
+            font-family: textos;
+            font-size: 1.35rem;}
+
+/*************** MEDIA QUERIES ***************/
+
+@media only screen and (width<= 975px){
+    #wrapper {width:95%;}
+    #titulo {font-size: 2rem;
+             width: 30%;
+             margin-left: 57%;}
+    .grid4  {grid-template-columns: 50% 50%;}
+    #lol{width: 100%;
+         padding: 4% 4%;}
+}
+
+@media only screen and (width<= 630px){
+    #wrapper{width:100%}
+    .grid2 {grid-template-columns: 100%;}
+    h4{font-size: 2.1rem;}
+    .grid4  {grid-template-columns: 100%;}
+    .col2 {padding-top:4%;}
+    #titulo {margin-left:65%;}
+}

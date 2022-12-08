@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería LoL</title>
+    <!-- enlace a font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- enlace a la hoja de estilo de galeria.html -->
+    <link rel="stylesheet" href="CSS/galeria.css">
+    <!-- enlace a favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- enlace a javascript-->
+    <script src="./JS/javascript.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="./index.html" class="active">League of Legends</a>
+                <a href="#home">Home</a>
+                <a href="#IMAGES">Fotos</a>
+                <a href="#VIDEOS">Videos</a>
+
+                <!-- El último botón es especial 
+                se desactiva su href para que no mande a ningún sitio -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </nav>
+        <section id="home">
+            <div id="titulo">
+            <p></p>
+            </div>
+        </section>
+
+        <!-- SECCION DE LA GALERÍA-->
+        <section id="IMAGES">
+            <h1>Galeria de imágenes</h1>
+            <div class="grid3">
+                <div class="tercios">
+                    <img src="./images/1.jpg" alt="Sylas, campeón de LoL">
+                </div>
+
+                <div class="tercios">
+                    <img src="./images/2.jpg" alt="Pyke, campeón de LoL">
+                </div>
+
+                <div class="tercios">
+                    <img src="./images/3.png" alt="Akshan, campeón de LoL">
+                </div>
+
+                <div class="tercios">
+                    <img src="./images/4.jpg" alt="Irelia, campeona de LoL">
+                </div>
+
+                <div class="tercios">
+                    <img src="./images/5.jpg" alt="Shaco, campeón de LoL">
+                </div>
+
+                <div class="tercios">
+                    <img src="./images/6.jpg" alt="Pantheon, campeón de LoL">
+                </div>
+            </div>
+        </section>
+
+        <section id="VIDEOS">
+            <h1>Galeria de videos</h1>
+            <div class="grid2">
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/aR-KAldshAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/zF5Ddo9JdpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="fin-float"></div>
+        </section>
+
+        <footer>
+            <div class="tituloseccion" id="mifooter">
+            <h1>¡Síguenos en Redes Sociales!</h1>
+            </div>
+                <div class="redes">
+                <a href="https://www.facebook.com/leagueoflegends/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/LeagueOfLegends" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/@leagueoflegends" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/lol_es/" target="_blank" class="fa fa-instagram"></a>
+                </div>
+                <div class="copyright">
+                    <p>Página web diseñada por David Solera Romero</p>
+                </div>
+        </footer>
+        <div class="vacio">
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+</html>

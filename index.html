@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends - Inicio</title>
+    <!-- enlace a font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- enlace a la hoja de estilo de index.html -->
+    <link rel="stylesheet" href="CSS/index.css">
+    <!-- enlace a favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- enlace a javascript-->
+    <script src="./JS/javascript.js"></script>
+</head>
+<body>
+    <!-- Para que aparezca todo esto seguido podemos poner: 
+         div#wrapper>nav+section*4+footer 
+        Todos los div son bloques -->
+    <div id="wrapper">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#" class="active">League of Legends</a>
+                <a href="#intro">Introducción</a>
+                <a href="#origenes">Orígenes</a>
+                <a href="#mejorjugador">Mejores jugadores</a>
+                <a href="./galeria.html">Galería</a>
+
+                <!-- El último botón es especial 
+                se desactiva su href para que no mande a ningún sitio -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </nav>
+    
+    <!-- HERO SECTION VERSIÓN 1 : FOTO + TEXTO -->
+        <section id="hero">
+            <div id="titulo">
+            <p>League<br>of Legends</p>
+            </div>
+        </section>
+
+        <section id="intro">
+            <div class="tituloseccion">
+            <strong>Introducción al concepto del juego</strong>
+            </div>
+                <div class="grid2">
+                    <div class="col2 coltexto">
+                        <div class="tituloseccion1">
+                        ¿Qué es LoL?
+                        </div>
+                        League of Legends es un juego de estrategia por equipos en el que dos equipos de cinco campeones se enfrentan en un mapa llamado <strong>La Grieta del Invocador</strong> para ver quién destruye antes la base del otro. Elige de entre un conjunto de más de 150 campeones para realizar jugadas épicas, asesinar a vuestros rivales y derribar torretas para alzaros con la victoria.
+                    </div>
+                    <div class="col2">
+                        <img src="./images/mapalol.png" alt="Mapa de League of Legends">
+                    </div>
+                    <div class="col2" id="fundadores">
+                        <img src="./images/fundadores.jpg" alt="Fundadores de la empresa de League of Legends (Riot Games)">
+                    </div>
+                    <div class="col2 coltexto">
+                        <div class="tituloseccion1">
+                            Creadores
+                            </div>
+                        Estas dos personas son las que fundaron lo que hoy es un videojuego muy popular alrededor del mundo. <br>
+                        <br>
+                        Marc ‘Tryndamere’ Merril y Brandon ‘Ryze’ Beck fundaron una empresa de videojuegos por el año 2006 y no fue hasta el 2009 que League of Legends estuvo disponible para el público. Estas dos personas desarrollaron este juego durante ese tiempo.
+                    </div>
+                </div>
+        </section>
+
+        <section id="origenes">
+            <div class="tituloseccion">
+            Orígenes
+            </div>
+            <img src="./images/lol.png" alt="Portada de League of Legends" id="lol">
+            <div class="coltexto">
+            Brandon y Marc dijeron “Nosotros también somos jugadores y como jugadores queremos que se nos escuche, así que el juego cambiará mientras nuestros usuarios también lo hagan, escucharemos y nos adaptaremos” <br>
+            <br>
+            Brandon y Marc buscaron financiación para desarrollar este proyecto, y los emprendedores consiguieron dinero de sus familiares y varios inversores, que de entre ellos se encontraba la colosal empresa china <strong>Tencent</strong>, que más adelante se convertiría en un poderoso aliado de la compañía. <br>
+            <br>
+            Una vez hecho todo esto, en 2009 decidieron mostrarlo al público para ver cual era la recepción de este. League of Legends tomó la mejor decisión que podría haber tomado y fue esto lo que le hace ganar cientos de millones de dólares al año. Para más información <a class="boton2" href="https://www.yeabitinformatica.com/gaming/la-historia-de-league-of-legends/">haz clic aquí.</a>
+            </div>
+        </section>
+
+        <section id="mejorjugador">
+            <div class="tituloseccion">
+                Mejores jugadores
+                <div class="grid4">
+            <div class="col4">
+                <!-- Aquí va la card de W3Schools -->
+                <div class="card">
+                    <img src="./images/faker.png" alt="Faker">
+                    <div class="container">
+                      <h4><b>Faker</b></h4>
+                      <p><a class="boton" href="https://lol.fandom.com/wiki/Faker" target="_blank">Más info</a></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col4">
+                <div class="card">
+                    <img src="./images/deft.png" alt="Deft">
+                    <div class="container">
+                      <h4><b>Deft</b></h4>
+                      <p><a class="boton" href="https://lol.fandom.com/wiki/Deft" target="_blank">Más info</a></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col4">
+                <div class="card">
+                    <img src="./images/xpeke.png" alt="xPeke">
+                    <div class="container">
+                      <h4><b>xPeke</b></h4>
+                      <p><a class="boton" href="https://lol.fandom.com/wiki/XPeke" target="_blank">Más info</a></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col4">
+                <div class="card">
+                    <img src="./images/rekkles.png" alt="Rekkles">
+                    <div class="container">
+                      <h4><b>Rekkles</b></h4>
+                      <p><a class="boton" href="https://lol.fandom.com/wiki/Rekkles" target="_blank">Más info</a></p>
+                    </div>
+                  </div>
+            </div>    
+        </section>
+
+        <footer>
+            <div class="tituloseccion" id="mifooter">
+            ¡Síguenos en Redes Sociales!
+            </div>
+                <div class="redes">
+                <a href="https://www.facebook.com/leagueoflegends/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/LeagueOfLegends" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/@leagueoflegends" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/lol_es/" target="_blank" class="fa fa-instagram"></a>
+                </div>
+                <div class="copyright">
+                    <p>Página web diseñada por David Solera Romero</p>
+                </div>
+        </footer>
+        <div class="vacio">
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
