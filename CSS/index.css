@@ -269,6 +269,7 @@ nav {
     .grid4  {grid-template-columns: 50% 50%;}
     #lol{width: 100%;
          padding: 4% 4%;}
+    .coltexto{text-align: left;}
 }
 
 @media only screen and (width<= 630px){
