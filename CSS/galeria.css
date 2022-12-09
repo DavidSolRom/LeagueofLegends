@@ -185,9 +185,6 @@ nav {
 .grid2{display:grid;
     grid-template-columns: auto auto;}
 
-.tercios img {width: 100%;
-           padding: 2%;}
-
 /* FOOTER */
 
 #mifooter {font-size: 2.45rem;}
